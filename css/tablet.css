@@ -1,0 +1,121 @@
+@media (min-width: 641px) and (max-width: 1199px) {
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 40px;
+        line-height: 55px;
+        color: #ffffff;
+        font-weight: 700;
+        font-family: "Open Sans-Bold";
+        text-align: center;
+    }
+
+    .header {
+        background-image: url(../images/banner-bg-tablet.jpg);
+        height: 100%;
+    }
+
+    .top-panel {
+        justify-content: space-between;
+    }
+
+    .menu-list {
+        display: none;
+    }
+
+    .slogan {
+        position: relative;
+        z-index: 2;
+        max-width: 80%;
+        padding: 150px 0 200px;
+        margin: 0;
+    }
+
+    .trend {
+        flex-wrap: wrap;
+    }
+
+    .cards-trend {
+        flex-wrap: wrap;
+    }
+
+    .card-trend {
+        /* сама карточка */
+        width: 49%;
+        height: auto;
+        margin: 0.25%;
+    }
+
+    .page-content {
+        display: flex;
+        max-width: 100%;
+    }
+
+    .content {
+        max-width: 60%;
+    }
+
+    .card {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .cards {
+        max-width: 100%;
+    }
+
+    .card-picture-box {
+        width: 100%;
+    }
+
+    .card-news {
+        max-width: 100%;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .card-name {
+        margin-bottom: 20px;
+    }
+
+    .card-date {
+        margin-bottom: 20px;
+    }
+
+    .card-author {
+        margin-bottom: 20px;
+    }
+
+    .card-content {
+        margin: 0;
+    }
+
+    .other-content {
+        padding: 0;
+        max-width: 39%;
+        margin-left: 1%;
+    }
+
+
+    .our-products {
+        margin-top: 15%;
+        max-width: 100%;
+    }
+
+    .products {
+        flex-wrap: wrap;
+    }
+
+    .product {
+        max-width: 40%;
+        box-sizing: border-box;
+        margin-bottom: 10%;
+        margin-left: 4%;
+        margin-right: 4%;
+
+    }
+}

@@ -1,0 +1,1026 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/OpenSans-Regular.woff) format("woff"),
+        url(../fonts/OpenSans-Regular.woff2) format("woff2"),
+        url(../fonts/OpenSans-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans-bold";
+    src: url(../fonts/OpenSans-Bold.woff) format("woff"),
+        url(../fonts/OpenSans-Bold.woff2) format("woff2"),
+        url(../fonts/OpenSans-Bold.ttf) format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 45px;
+    line-height: normal;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Open Sans-bold";
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: normal;
+    font-weight: 700;
+    font-family: "Open Sans-bold";
+    text-transform: uppercase;
+    margin: 0 0 0 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p {
+    font-size: 15px;
+    line-height: normal;
+    color: #0f0d0e;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+
+.header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000000;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.header::after {
+    content: "";
+    background-color: #000000;
+    z-index: 1;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    opacity: 0.6;
+}
+
+.top-panel {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 29px;
+
+    align-items: center;
+
+    position: relative;
+    z-index: 2;
+}
+
+.header-logotype {
+    width: 180px;
+}
+
+.menu-button {
+    width: 1.4em;
+    height: 1em;
+    border: none;
+    padding: 0;
+
+    background-color: transparent;
+    font-size: 25px;
+    position: relative;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+
+.menu-button:before,
+.menu-button:after {
+    content: "";
+    width: 100%;
+    height: 20%;
+
+    border-radius: 5px;
+    background-color: #ffffff;
+
+    position: absolute;
+    left: 0;
+}
+
+.menu-button:before {
+    top: 0;
+}
+
+.menu-button:after {
+    bottom: 0;
+}
+
+.menu-button-label {
+    width: 100%;
+    height: 20%;
+    margin-top: -0.1em;
+
+    border-radius: 5px;
+    background-color: #ffffff;
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.trend {
+    /*Блок сейчас в тренде*/
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+    width: 100%;
+    /*8*/
+    box-sizing: border-box;
+    /*8*/
+}
+
+.cards-trend {
+    /*весь блок с карточками*/
+    display: flex;
+}
+
+
+.trend-title {
+    /*Заголок раздела*/
+    font-size: 20px;
+    color: #0f0d0e;
+    font-weight: 900;
+    font-family: "Open Sans-bold";
+    text-transform: uppercase;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.trend-title::after {
+    /*Черта под заголовком раздела*/
+    content: "";
+    display: block;
+
+    width: 40%;
+    height: 3px;
+    background-color: #b59f5b;
+
+    margin-top: 13px;
+    margin-left: auto;
+    margin-right: auto;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+.card-trend {
+    /* сама карточка */
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    /* чтобы картинка имела полную высоту */
+}
+
+
+.card-trend::after {
+    /* затемнение картинки карточки */
+    content: "";
+    background-color: #000000;
+    z-index: 0;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    opacity: 0.6;
+}
+
+.card-trend1 {
+    /* картинка-подложка */
+    background-image: url(../images/trend1.jpg);
+}
+
+.card-trend2 {
+    background-image: url(../images/trend2.jpg);
+
+}
+
+.card-trend3 {
+    background-image: url(../images/trend3.jpg);
+}
+
+.card-trend4 {
+    background-image: url(../images/trend4.jpg);
+}
+
+
+.card-trend-news {
+    /* текстовый блок-карточка */
+    box-sizing: border-box;
+    width: 90%;
+    border: 3px solid #b59f5b;
+
+    z-index: 2;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    margin-top: 140px;
+    padding-top: 33px;
+    padding-bottom: 31px;
+    padding-left: 33px;
+    padding-right: 20px;
+    vertical-align: baseline;
+    flex-direction: column-reverse;
+}
+
+.trend-tags {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.trend-tag {
+    padding-right: 20px;
+}
+
+.trend-tag-text {
+    font-size: 14px;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #b59f5b;
+    font-weight: 700;
+    font-family: "Open Sans-bold";
+    margin-top: 0;
+    padding-top: 35px;
+}
+
+.trend-name {
+    /* заголоок-ссылка */
+    font-size: 18px;
+    line-height: normal;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Open Sans";
+}
+
+.trend-name:hover {
+    /* изменение цвета текста ссылки при наведении */
+    color: #b59f5b;
+}
+
+.page-content {
+    display: flex;
+}
+
+.content {
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cards {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.card-picture {
+    width: 100%;
+    background-color: #fff;
+    padding: 0;
+}
+
+.card-news {
+    box-sizing: border-box;
+    padding: 0 0 0 30px;
+    background-color: #fff;
+}
+
+.card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.card-tag:nth-child(n + 1) {
+    padding-right: 10px;
+}
+
+.card-tag-text {
+    font-size: 14px;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #b59f5b;
+    font-weight: 700;
+    font-family: "Open Sans-bold";
+    margin-top: 0;
+    padding-top: 35px;
+}
+
+.card-name {
+    margin-top: 13px;
+}
+
+.card-name a {
+    color: #0f0d0e;
+}
+
+.card-date {
+    padding-right: 10px;
+    font-size: 12px;
+    line-height: normal;
+    color: #888888;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+
+.card-author {
+    font-size: 12px;
+    line-height: normal;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Open Sans";
+}
+
+.card-content {
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.other-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.other-content-title {
+    font-size: 14px;
+    color: #0f0d0e;
+    font-weight: 700;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.other-content-title::after {
+    content: "";
+    display: block;
+
+    width: 20%;
+    height: 3px;
+    background-color: #b59f5b;
+
+    margin-top: 13px;
+    margin-left: auto;
+    margin-right: auto;
+
+    position: relative;
+    z-index: 2;
+}
+
+.newpost {
+    display: flex;
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.newpost-picture {
+    padding: 0;
+    background-color: #fff;
+    max-width: 25%;
+    /*11 меняем размер*/
+}
+
+.newpost-card {
+    max-width: 75%;
+    /*12*/
+    box-sizing: border-box;
+    /*13*/
+    padding-left: 10px;
+    background-color: #fff;
+}
+
+.newpost-card-date {
+    display: block;
+    font-size: 12px;
+    line-height: normal;
+    color: #888888;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+
+.newpost-card-name {
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #0f0d0e;
+    font-weight: 600;
+    font-family: "Open Sans";
+}
+
+.newpost-card-name a {
+    color: #0f0d0e;
+}
+
+.search-form {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.search {
+    background-color: #f4f7f6;
+    height: 48px;
+    flex-grow: 1;
+    border: none;
+
+    font-size: 13px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Open Sans";
+    padding-left: 3px;
+}
+
+.search-button-label {
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute;
+}
+
+.search-button {
+    width: 48px;
+    height: 48px;
+    border: none;
+    padding: 0;
+
+    background-size: 18px;
+    background-image: url(../svg/search.svg);
+    background-color: #b59f5b;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.search-button:hover {
+    background-color: #323232;
+}
+
+.email {
+    background-color: #f4f7f6;
+    height: 48px;
+    width: 97%;
+    margin-top: 20px;
+    margin-bottom: 17px;
+    padding-left: 3px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Open Sans";
+    border: 1px solid transparent;
+    padding-right: 0;
+}
+
+.email:hover {
+    border: 1px solid #b59f5b;
+}
+
+.email-button {
+    height: 48px;
+    width: 100%;
+    background-color: #b59f5b;
+    border: none;
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: normal;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Open Sans";
+}
+
+.email-button:hover {
+    color: #323232;
+}
+
+.tags {
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding-left: 0;
+}
+
+.tags-list {
+    text-transform: uppercase;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li.tags-list-item {
+    background-color: rgba(253, 249, 242, 0);
+    border: 3px solid #eeeeee;
+
+    margin-right: 7px;
+    margin-bottom: 7px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.tags-list-title {
+    font-size: 14px;
+    line-height: 29px;
+    color: #0f0d0e;
+    font-weight: 700;
+    font-family: "Open Sans";
+}
+
+.teams-list {
+    margin: 0;
+    padding: 0;
+}
+
+.teams-list-item {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.teams-list-title {
+    font-family: "Open Sans-bold";
+    font-size: 14px;
+    text-transform: none;
+    color: #0f0d0e;
+}
+
+.teams-list-number {
+    font-size: 12px;
+    color: #b59f5b;
+    font-weight: 700;
+    font-family: "Open Sans";
+    vertical-align: super;
+}
+
+
+.our-products {
+    /*Блок Наши изделия*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.our-products-title {
+    /*Заголок раздела*/
+    font-size: 20px;
+    color: #0f0d0e;
+    font-weight: 900;
+    font-family: "Open Sans-bold";
+    text-transform: uppercase;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+}
+
+.our-products-title::after {
+    /*Черта под заголовком раздела*/
+    content: "";
+    display: block;
+
+    width: 40%;
+    height: 3px;
+    background-color: #b59f5b;
+
+    margin-top: 13px;
+    margin-left: auto;
+    margin-right: auto;
+
+    position: relative;
+    z-index: 2;
+}
+
+.products {
+    /*весь блок с карточками*/
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: stretch;
+}
+
+.product {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    /*3*/
+    flex-grow: 1;
+    /*4*/
+}
+
+.product-content {
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    /*7. изменения 8 и 9 ищи в тренде и пейдж-контент*/
+    align-items: stretch;
+}
+
+.product-img {
+    max-width: 100%;
+}
+
+.product-content-text {
+    max-width: 100%;
+    padding-top: 20px;
+    outline: 3px solid #b59f5b;
+    outline-offset: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    flex-grow: 1;
+    /*8*/
+}
+
+.product-title {
+    font-size: 20px;
+    line-height: 24px;
+    color: #0f0d0e;
+    font-weight: 900;
+    font-family: "Open Sans";
+}
+
+.product-description {
+    font-size: 15px;
+    line-height: 22px;
+    color: #0f0d0e;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+
+
+.product-video {
+    font-size: 15px;
+    line-height: 22px;
+    color: #b59f5b;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+
+.product-video:hover {
+    color: #0f0d0e;
+}
+
+.product-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 0;
+    width: 100%;
+}
+
+.product-price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #222;
+    line-height: 1;
+    display: flex;
+}
+
+.product-price-old {
+    text-decoration: line-through;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.product-rub {
+    margin-left: .2em;
+}
+
+.product-button {
+    display: flex;
+    align-items: center;
+    border: none;
+
+    width: 140px;
+    height: 48px;
+    background-color: #b59f5b;
+}
+
+.product-button:hover {
+    background-color: #323232;
+}
+
+.product-link {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    line-height: 40px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+}
+
+.socials-base {
+    max-width: 100%;
+    height: 80px;
+    padding-left: 0;
+
+    background-color: #f4f7f6;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 25%;
+    height: 80px;
+    padding-left: 0;
+
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    align-items: center;
+
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.socials-item {
+    height: 20px;
+    width: 1px;
+    margin-top: 0;
+    margin-right: 0;
+}
+
+.socials-link {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+    position: absolute;
+    z-index: 2;
+}
+
+.socials-link-twitter {
+    background-image: url("../svg/004-twitter.svg");
+}
+
+.socials-link-pinterest {
+    background-image: url("../svg/001-pinterest.svg");
+}
+
+.socials-link-facebook {
+    background-image: url("../svg/002-facebook-logo.svg");
+}
+
+.socials-link-instagram {
+    background-image: url("../svg/005-instagram.svg");
+}
+
+.socials-link-tumblr {
+    background-image: url("../svg/003-tumblr.svg");
+}
+
+.socials-link-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.copyright {
+    width: 18.7%;
+    padding: 80px 0 80px 40px;
+
+    font-size: 12px;
+    color: #999999;
+    font-weight: 600;
+    font-family: "Open Sans-bold";
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 1200px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+        position: relative;
+    }
+
+
+    .header {
+        background-image: url(../images/banner-bg.jpg);
+    }
+
+    .top-panel {
+        justify-content: space-around;
+    }
+
+    .menu-button,
+    .menu-button-label {
+        display: none;
+    }
+
+    .menu {
+        font-size: 13px;
+        color: #ffffff;
+        font-weight: 400;
+        font-family: "Open Sans";
+        text-align: center;
+    }
+
+    .menu-list {
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        display: flex;
+    }
+
+    .menu-list-item {
+        padding: 0 16px;
+        color: #ffffff;
+    }
+
+    .menu-list-item:hover {
+        color: #ffffff;
+    }
+
+    .menu-link {
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 400;
+        color: inherit;
+    }
+
+
+    .menu-button {
+        display: none;
+    }
+
+    .slogan {
+        position: relative;
+        z-index: 2;
+        max-width: 49%;
+        padding: 85px 0 144px 35px;
+        margin: auto;
+    }
+
+    .trend {
+        /*Блок сейчас в тренде*/
+        margin-bottom: 64px;
+        width: 100%;
+        /*8*/
+        box-sizing: border-box;
+        /*8*/
+
+    }
+
+    .cards-trend {
+        /*весь блок с карточками*/
+        flex-wrap: nowrap;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+        /*8*/
+        box-sizing: border-box;
+        /*8*/
+    }
+
+    .card-trend {
+        /* сама карточка */
+        box-sizing: border-box;
+        /*8*/
+        width: 25%;
+        margin-right: 4px;
+    }
+
+    .card-trend:last-child {
+        margin-right: 0;
+    }
+
+
+    .page-content {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        box-sizing: border-box;
+        justify-content: center;
+        /*9*/
+    }
+
+    .content {
+        max-width: 66%;
+    }
+
+    .card:nth-child(n + 1) {
+        margin-top: 0;
+        padding-top: 0;
+        padding-bottom: 65px;
+    }
+
+
+    .card-picture-box {
+        max-width: 50%;
+        box-sizing: border-box;
+    }
+
+    .card-news {
+        max-width: 50%;
+    }
+
+    .card-name {
+        margin-bottom: 35px;
+    }
+
+
+    .card-date {
+        margin-bottom: 50px;
+    }
+
+    .card-author {
+        margin-bottom: 50px;
+    }
+
+    .card-content {
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+
+    .other-content {
+        margin-left: 120px;
+        padding: 0;
+        max-width: 24%;
+    }
+
+    .our-products {
+        /*Блок Наши изделия*/
+        flex-direction: column;
+        /*2*/
+        margin-bottom: 64px;
+        max-width: 73%;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        /*1*/
+    }
+
+    .products {
+        /*весь блок с карточками*/
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+    }
+
+    .product {
+        max-width: 30%;
+        margin-left: 3%;
+        /*5*/
+        margin-right: 3%;
+        /*6*/
+    }
+
+    .product:first-child {
+        margin-left: 0;
+    }
+
+    .product:last-child {
+        margin-right: 0;
+    }
+}
