@@ -1,10 +1,4 @@
 @media (min-width: 641px) and (max-width: 1199px) {
-    body {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
     h1 {
         font-size: 40px;
         line-height: 55px;
@@ -12,6 +6,20 @@
         font-weight: 700;
         font-family: "Open Sans-Bold";
         text-align: center;
+    }
+
+    h2 {
+        font-size: 18px;
+        line-height: 29px;
+        color: #0f0d0e;
+        font-weight: 700;
+        font-family: "Open Sans";
+    }
+
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .header {
