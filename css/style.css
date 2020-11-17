@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Open Sans";
+    font-family: "OpenSans-Regular";
     src: url(../fonts/OpenSans-Regular.woff) format("woff"),
         url(../fonts/OpenSans-Regular.woff2) format("woff2"),
         url(../fonts/OpenSans-Regular.ttf) format("truetype");
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-    font-family: "Open Sans-bold";
+    font-family: "OpenSans-Bold";
     src: url(../fonts/OpenSans-Bold.woff) format("woff"),
         url(../fonts/OpenSans-Bold.woff2) format("woff2"),
         url(../fonts/OpenSans-Bold.ttf) format("truetype");
@@ -21,7 +21,7 @@ h1 {
     line-height: normal;
     color: #ffffff;
     font-weight: 600;
-    font-family: "Open Sans-bold";
+    font-family: "OpenSans-Bold";
     text-align: center;
     text-transform: uppercase;
 }
@@ -30,7 +30,7 @@ h3 {
     font-size: 20px;
     line-height: normal;
     font-weight: 700;
-    font-family: "Open Sans-bold";
+    font-family: "OpenSans-Bold";
     text-transform: uppercase;
     margin: 0 0 0 0;
 }
@@ -49,7 +49,7 @@ p {
     line-height: normal;
     color: #0f0d0e;
     font-weight: 400;
-    font-family: "Open Sans";
+    font-family: "OpenSans-Regular";
 }
 
 .header {
@@ -145,9 +145,7 @@ p {
     flex-wrap: wrap;
     margin-bottom: 64px;
     width: 100%;
-    /*8*/
     box-sizing: border-box;
-    /*8*/
 }
 
 .cards-trend {
@@ -161,7 +159,7 @@ p {
     font-size: 20px;
     color: #0f0d0e;
     font-weight: 900;
-    font-family: "Open Sans-bold";
+    font-family: "OpenSans-Bold";
     text-transform: uppercase;
 
     margin-left: auto;
@@ -271,7 +269,7 @@ p {
     text-transform: uppercase;
     color: #b59f5b;
     font-weight: 700;
-    font-family: "Open Sans-bold";
+    font-family: "OpenSans-Bold";
     margin-top: 0;
     padding-top: 35px;
 }
@@ -282,7 +280,7 @@ p {
     line-height: normal;
     color: #ffffff;
     font-weight: 700;
-    font-family: "Open Sans";
+    font-family: "OpenSans-Regular";
 }
 
 .trend-name:hover {
@@ -338,7 +336,7 @@ p {
     text-transform: uppercase;
     color: #b59f5b;
     font-weight: 700;
-    font-family: "Open Sans-bold";
+    font-family: "OpenSans-Bold";
     margin-top: 0;
     padding-top: 35px;
 }
@@ -357,7 +355,7 @@ p {
     line-height: normal;
     color: #888888;
     font-weight: 400;
-    font-family: "Open Sans";
+    font-family: "OpenSans-Regular";
 }
 
 .card-author {
@@ -365,7 +363,7 @@ p {
     line-height: normal;
     color: #000000;
     font-weight: 700;
-    font-family: "Open Sans";
+    font-family: "OpenSans-Regular";
 }
 
 .card-content {
@@ -382,7 +380,7 @@ p {
     font-size: 14px;
     color: #0f0d0e;
     font-weight: 700;
-    font-family: "Open Sans";
+    font-family: "OpenSans-Regular";
     text-transform: uppercase;
     text-align: center;
     margin-top: 0;
@@ -416,14 +414,12 @@ p {
     padding: 0;
     background-color: #fff;
     max-width: 25%;
-    /*11 меняем размер*/
+    /*меняем размер*/
 }
 
 .newpost-card {
     max-width: 75%;
-    /*12*/
     box-sizing: border-box;
-    /*13*/
     padding-left: 10px;
     background-color: #fff;
 }
@@ -434,7 +430,7 @@ p {
     line-height: normal;
     color: #888888;
     font-weight: 400;
-    font-family: "Open Sans";
+    font-family: "OpenSans-Regular";
 }
 
 .newpost-card-name {
@@ -442,7 +438,7 @@ p {
     font-size: 14px;
     color: #0f0d0e;
     font-weight: 600;
-    font-family: "Open Sans";
+    font-family: "OpenSans-Regular";
 }
 
 .newpost-card-name a {
@@ -464,7 +460,7 @@ p {
     font-size: 13px;
     color: #000000;
     font-weight: 400;
-    font-family: "Open Sans";
+    font-family: "OpenSans-Regular";
     padding-left: 3px;
 }
 
@@ -501,7 +497,7 @@ p {
     padding-left: 3px;
     color: #000000;
     font-weight: 400;
-    font-family: "Open Sans";
+    font-family: "OpenSans-Regular";
     border: 1px solid transparent;
     padding-right: 0;
 }
@@ -520,7 +516,7 @@ p {
     line-height: normal;
     color: #ffffff;
     font-weight: 700;
-    font-family: "Open Sans";
+    font-family: "OpenSans-Regular";
 }
 
 .email-button:hover {
@@ -555,7 +551,7 @@ li.tags-list-item {
     line-height: 29px;
     color: #0f0d0e;
     font-weight: 700;
-    font-family: "Open Sans";
+    font-family: "OpenSans-Regular";
 }
 
 .teams-list {
@@ -570,7 +566,7 @@ li.tags-list-item {
 }
 
 .teams-list-title {
-    font-family: "Open Sans-bold";
+    font-family: "OpenSans-Bold";
     font-size: 14px;
     text-transform: none;
     color: #0f0d0e;
@@ -580,7 +576,7 @@ li.tags-list-item {
     font-size: 12px;
     color: #b59f5b;
     font-weight: 700;
-    font-family: "Open Sans";
+    font-family: "OpenSans-Regular";
     vertical-align: super;
 }
 
@@ -596,7 +592,7 @@ li.tags-list-item {
     font-size: 20px;
     color: #0f0d0e;
     font-weight: 900;
-    font-family: "Open Sans-bold";
+    font-family: "OpenSans-Bold";
     text-transform: uppercase;
 
     margin-left: auto;
@@ -635,9 +631,7 @@ li.tags-list-item {
     font-size: 14px;
     display: flex;
     flex-direction: column;
-    /*3*/
     flex-grow: 1;
-    /*4*/
 }
 
 .product-content {
@@ -646,7 +640,6 @@ li.tags-list-item {
     flex-direction: column;
     flex-wrap: wrap;
     flex-grow: 1;
-    /*7. изменения 8 и 9 ищи в тренде и пейдж-контент*/
     align-items: stretch;
 }
 
@@ -663,7 +656,6 @@ li.tags-list-item {
     flex-wrap: wrap;
     align-items: stretch;
     flex-grow: 1;
-    /*8*/
 }
 
 .product-title {
@@ -671,7 +663,7 @@ li.tags-list-item {
     line-height: 24px;
     color: #0f0d0e;
     font-weight: 900;
-    font-family: "Open Sans";
+    font-family: "OpenSans-Regular";
 }
 
 .product-description {
@@ -679,7 +671,7 @@ li.tags-list-item {
     line-height: 22px;
     color: #0f0d0e;
     font-weight: 400;
-    font-family: "Open Sans";
+    font-family: "OpenSans-Regular";
 }
 
 
@@ -688,7 +680,7 @@ li.tags-list-item {
     line-height: 22px;
     color: #b59f5b;
     font-weight: 400;
-    font-family: "Open Sans";
+    font-family: "OpenSans-Regular";
 }
 
 .product-video:hover {
@@ -744,7 +736,7 @@ li.tags-list-item {
     line-height: 40px;
     color: #ffffff;
     font-weight: 700;
-    font-family: "Open Sans";
+    font-family: "OpenSans-Regular";
     text-transform: uppercase;
 }
 
@@ -829,7 +821,7 @@ li.tags-list-item {
     font-size: 12px;
     color: #999999;
     font-weight: 600;
-    font-family: "Open Sans-bold";
+    font-family: "OpenSans-Bold";
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -862,7 +854,7 @@ li.tags-list-item {
         font-size: 13px;
         color: #ffffff;
         font-weight: 400;
-        font-family: "Open Sans";
+        font-family: "OpenSans-Regular";
         text-align: center;
     }
 
@@ -906,10 +898,7 @@ li.tags-list-item {
         /*Блок сейчас в тренде*/
         margin-bottom: 64px;
         width: 100%;
-        /*8*/
         box-sizing: border-box;
-        /*8*/
-
     }
 
     .cards-trend {
@@ -918,15 +907,12 @@ li.tags-list-item {
         margin-right: auto;
         margin-left: auto;
         width: 100%;
-        /*8*/
         box-sizing: border-box;
-        /*8*/
     }
 
     .card-trend {
         /* сама карточка */
         box-sizing: border-box;
-        /*8*/
         width: 25%;
         margin-right: 4px;
     }
@@ -942,7 +928,6 @@ li.tags-list-item {
         margin-left: auto;
         box-sizing: border-box;
         justify-content: center;
-        /*9*/
     }
 
     .content {
@@ -992,13 +977,11 @@ li.tags-list-item {
     .our-products {
         /*Блок Наши изделия*/
         flex-direction: column;
-        /*2*/
         margin-bottom: 64px;
         max-width: 73%;
         margin-left: auto;
         margin-right: auto;
         box-sizing: border-box;
-        /*1*/
     }
 
     .products {
@@ -1010,10 +993,8 @@ li.tags-list-item {
 
     .product {
         max-width: 30%;
-        margin-left: 3%;
-        /*5*/
-        margin-right: 3%;
-        /*6*/
+        margin-left: 2%;
+        margin-right: 2%;
     }
 
     .product:first-child {
