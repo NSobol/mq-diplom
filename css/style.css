@@ -52,6 +52,13 @@ p {
     font-family: "OpenSans-Regular";
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    position: relative;
+}
+
 .header {
     background-size: cover;
     background-repeat: no-repeat;
@@ -74,6 +81,12 @@ p {
     opacity: 0.6;
 }
 
+.header-content {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .top-panel {
     display: flex;
     flex-wrap: wrap;
@@ -83,6 +96,7 @@ p {
     padding-top: 29px;
 
     align-items: center;
+    justify-content: space-between;
 
     position: relative;
     z-index: 2;
@@ -292,11 +306,6 @@ p {
     display: flex;
 }
 
-.content {
-    flex-direction: column;
-    justify-content: space-around;
-}
-
 .cards {
     margin: 0;
     padding: 0;
@@ -363,7 +372,7 @@ p {
     line-height: normal;
     color: #000000;
     font-weight: 700;
-    font-family: "OpenSans-Regular";
+    font-family: "OpenSans-Bold";
 }
 
 .card-content {
@@ -380,7 +389,7 @@ p {
     font-size: 14px;
     color: #0f0d0e;
     font-weight: 700;
-    font-family: "OpenSans-Regular";
+    font-family: "OpenSans-Bold";
     text-transform: uppercase;
     text-align: center;
     margin-top: 0;
@@ -438,7 +447,7 @@ p {
     font-size: 14px;
     color: #0f0d0e;
     font-weight: 600;
-    font-family: "OpenSans-Regular";
+    font-family: "OpenSans-Bold";
 }
 
 .newpost-card-name a {
@@ -461,7 +470,9 @@ p {
     color: #000000;
     font-weight: 400;
     font-family: "OpenSans-Regular";
-    padding-left: 3px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .search-button-label {
@@ -499,7 +510,10 @@ p {
     font-weight: 400;
     font-family: "OpenSans-Regular";
     border: 1px solid transparent;
-    padding-right: 0;
+
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .email:hover {
@@ -551,7 +565,7 @@ li.tags-list-item {
     line-height: 29px;
     color: #0f0d0e;
     font-weight: 700;
-    font-family: "OpenSans-Regular";
+    font-family: "OpenSans-Bold";
 }
 
 .teams-list {
@@ -632,6 +646,8 @@ li.tags-list-item {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .product-content {
@@ -644,7 +660,8 @@ li.tags-list-item {
 }
 
 .product-img {
-    max-width: 100%;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .product-content-text {
@@ -663,7 +680,7 @@ li.tags-list-item {
     line-height: 24px;
     color: #0f0d0e;
     font-weight: 900;
-    font-family: "OpenSans-Regular";
+    font-family: "OpenSans-Bold";
 }
 
 .product-description {
@@ -698,16 +715,23 @@ li.tags-list-item {
 }
 
 .product-price {
-    font-size: 24px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0f0d0e;
     font-weight: 700;
-    color: #222;
-    line-height: 1;
+    font-family: "OpenSans-Bold";
+
     display: flex;
 }
 
 .product-price-old {
     text-decoration: line-through;
     font-size: 14px;
+    line-height: 24px;
+    text-decoration: line-through;
+    color: #0f0d0e;
+    font-weight: 700;
+    font-family: "OpenSans-Bold";
     margin-bottom: 5px;
 }
 
@@ -741,7 +765,7 @@ li.tags-list-item {
 }
 
 .socials-base {
-    max-width: 100%;
+    max-width: 210px;
     height: 80px;
     padding-left: 0;
 
@@ -753,7 +777,6 @@ li.tags-list-item {
 .socials {
     display: flex;
     flex-wrap: wrap;
-    max-width: 25%;
     height: 80px;
     padding-left: 0;
 
@@ -772,7 +795,7 @@ li.tags-list-item {
 
 .socials-item {
     height: 20px;
-    width: 1px;
+    width: 20px;
     margin-top: 0;
     margin-right: 0;
 }
@@ -829,20 +852,8 @@ li.tags-list-item {
 
 @media (min-width: 1200px) {
 
-    body {
-        margin: 0;
-        padding: 0;
-        background-color: #ffffff;
-        position: relative;
-    }
-
-
     .header {
         background-image: url(../images/banner-bg.jpg);
-    }
-
-    .top-panel {
-        justify-content: space-around;
     }
 
     .menu-button,
@@ -889,7 +900,7 @@ li.tags-list-item {
     .slogan {
         position: relative;
         z-index: 2;
-        max-width: 49%;
+        max-width: 60%;
         padding: 85px 0 144px 35px;
         margin: auto;
     }
@@ -897,7 +908,6 @@ li.tags-list-item {
     .trend {
         /*Блок сейчас в тренде*/
         margin-bottom: 64px;
-        width: 100%;
         box-sizing: border-box;
     }
 
@@ -921,13 +931,12 @@ li.tags-list-item {
         margin-right: 0;
     }
 
-
     .page-content {
-        width: 80%;
+        max-width: 80%;
         margin-right: auto;
         margin-left: auto;
         box-sizing: border-box;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .content {
@@ -969,7 +978,6 @@ li.tags-list-item {
     }
 
     .other-content {
-        margin-left: 120px;
         padding: 0;
         max-width: 24%;
     }
