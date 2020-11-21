@@ -142,6 +142,26 @@
         padding: 80px 0 80px 0px;
     }
 
+    .popup-container {
+        max-width: 90%;
+        height: 90vh;
+    }
+
+    .popup-select,
+    .popup-radio {
+        margin-bottom: 10px;
+    }
+
+    .comment {
+        height: 15vh;
+        margin-top: 15px;
+    }
+
+    .popup-button {
+        margin-top: 10px;
+    }
+
+
     @media (orientation:landscape) {
         .header {
             background-image: url(../images/banner-bg-tablet.jpg);
