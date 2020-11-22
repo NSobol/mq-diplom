@@ -1,0 +1,222 @@
+@media (max-width: 640px) {
+    h1 {
+        font-size: 26px;
+        line-height: 36px;
+        color: #ffffff;
+        font-weight: 700;
+        font-family: "OpenSans-Regular";
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 16px;
+        color: #0f0d0e;
+        font-weight: 700;
+        font-family: "OpenSans-Regular";
+    }
+
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header {
+        background-image: url(../images/banner-mobile.jpg);
+    }
+
+    .top-panel {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .menu-list {
+        display: none;
+    }
+
+    .slogan {
+        position: relative;
+        z-index: 2;
+        max-width: 100%;
+        padding: 150px 0 200px;
+        margin: 0;
+    }
+
+    .trend {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .cards-trend {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card-trend {
+        /* сама карточка */
+        display: flex;
+        width: 100%;
+        margin-bottom: 4px;
+        position: relative;
+        flex-direction: column-reverse;
+    }
+
+    .page-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .content {
+        max-width: 100%;
+    }
+
+    .card {
+        flex-direction: column;
+        margin-top: 35px;
+        border-bottom: 3px solid #eeeeee;
+    }
+
+    .card-picture-box {
+        width: 100%;
+        padding: 0;
+    }
+
+    .card-news {
+        max-width: 100%;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .card-name {
+        margin-bottom: 15px;
+    }
+
+    .card-date {
+        margin-bottom: 15px;
+    }
+
+    .card-author {
+        margin-bottom: 15px;
+    }
+
+    .card-content {
+        margin: 0;
+    }
+
+    .other-content {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    li.tags-list-item {
+        margin-left: 4px;
+        margin-right: 4px;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    .our-products {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 15%;
+    }
+
+    .products {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .product {
+        max-width: 80%;
+        box-sizing: border-box;
+        margin-bottom: 20%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .product-content {
+        max-width: 100%;
+    }
+
+    .socials {
+        max-width: 100%;
+    }
+
+    .copyright {
+        width: 100%;
+        padding: 80px 0 80px 0px;
+    }
+
+    .popup-activ {
+        position: absolute;
+        max-width: 100%;
+        align-items: flex-start;
+        overflow: auto;
+        padding-top: 50px;
+    }
+
+    @media (orientation:landscape) {
+        .header {
+            background-image: url(../images/banner-bg-tablet.jpg);
+            height: 100vh;
+        }
+
+        .trend {
+            flex-wrap: wrap;
+        }
+
+        .cards-trend {
+            flex-wrap: wrap;
+        }
+
+        .card-trend {
+            /* сама карточка */
+            width: 49%;
+            height: auto;
+            margin: 0.25%;
+        }
+
+        .our-products {
+            margin-top: 15%;
+            max-width: 100%;
+        }
+
+        .products {
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        .product {
+            max-width: 40%;
+            box-sizing: border-box;
+            margin-bottom: 10%;
+            margin-left: 3%;
+            margin-right: 5%;
+        }
+
+        .product:nth-child(2n+1) {
+            margin-left: 7%;
+        }
+
+        .product-content-text {
+            outline-offset: 20px;
+        }
+
+        .popup-activ {
+            position: absolute;
+            height: 100%;
+            align-items: flex-start;
+            overflow: auto;
+            padding-top: 50px;
+        }
+
+
+
+    }
+}
