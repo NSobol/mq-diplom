@@ -61,13 +61,14 @@
         font-family: "OpenSans-Bold";
     }
 
-    .page-content {
-        display: flex;
-        max-width: 100%;
+    .trend-name:hover {
+        color: #b59f5b;
     }
 
-    .content {
-        max-width: 57%;
+    .page-content {
+        max-width: 100%;
+        padding-left: 35px;
+        padding-right: 35px;
     }
 
     .card {
@@ -93,6 +94,7 @@
 
     .card-name {
         margin-bottom: 20px;
+        font-size: 17px;
     }
 
     .card-date {
@@ -105,11 +107,16 @@
 
     .card-content {
         margin: 0;
+        font-size: 15px;
+        line-height: 22px;
+        color: #0f0d0e;
+        font-weight: 400;
+        font-family: "OpenSans-Regular";
     }
 
     .other-content {
         padding: 0;
-        width: 39%;
+        width: 40%;
         margin-left: 4%;
     }
 
@@ -117,8 +124,8 @@
         font-size: 12px;
         line-height: normal;
         color: #000000;
-        font-weight: 700;
-        font-family: "OpenSans-Bold";
+        font-weight: 400;
+        font-family: "OpenSans-Regular";
     }
 
     .newpost-card-name {
@@ -130,28 +137,31 @@
     }
 
     li.tags-list-item {
+        margin-right: 5px;
+    }
 
-
-        margin-right: 10px;
-        padding-left: 8px;
-        padding-right: 8px;
+    .tags-list-title {
+        font-size: 12px;
     }
 
     .our-products {
         margin-top: 15%;
         max-width: 100%;
+        padding-left: 35px;
+        padding-right: 35px;
     }
 
     .products {
         flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .product {
-        max-width: 40%;
+        max-width: 46%;
         box-sizing: border-box;
         margin-bottom: 10%;
-        margin-left: 4%;
-        margin-right: 4%;
+        margin-left: 2%;
+        margin-right: 2%;
     }
 
     @media (orientation:landscape) {

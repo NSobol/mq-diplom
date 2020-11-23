@@ -37,7 +37,7 @@
     .slogan {
         position: relative;
         z-index: 2;
-        max-width: 100%;
+        max-width: 94%;
         padding: 150px 0 200px;
         margin: 0;
     }
@@ -62,10 +62,34 @@
         flex-direction: column-reverse;
     }
 
+    .trend-tag-text {
+        font-size: 14px;
+        line-height: 37px;
+        color: #b59f5b;
+        font-weight: 700;
+        font-family: "OpenSans-Bold";
+    }
+
+    .trend-name {
+        font-size: 16px;
+        line-height: 20px;
+        color: #ffffff;
+        font-weight: 700;
+        font-family: "OpenSans-Bold";
+    }
+
+    .trend-name:hover {
+        color: #b59f5b;
+    }
+
+
+
     .page-content {
         display: flex;
         flex-direction: column;
         width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .content {
@@ -89,9 +113,19 @@
         margin-top: 10px;
     }
 
+    .card-tag-text {
+        font-size: 14px;
+    }
+
     .card-name {
         margin-bottom: 15px;
+        font-size: 16px;
     }
+
+    .card-name:hover {
+        color: #b59f5b;
+    }
+
 
     .card-date {
         margin-bottom: 15px;
@@ -103,6 +137,11 @@
 
     .card-content {
         margin: 0;
+        font-size: 14px;
+        line-height: 20px;
+        color: #0f0d0e;
+        font-weight: 400;
+        font-family: "OpenSans-Regular";
     }
 
     .other-content {
@@ -111,12 +150,22 @@
         padding: 0;
         max-width: 100%;
         margin-left: 0;
+        margin-top: 40px;
     }
 
+    li.tags-list-item {
+        margin-right: 6px;
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+
+    .tags-list-title {
+        font-size: 12px;
+    }
+
+
     .our-products {
-        display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
         margin-top: 15%;
     }
 
@@ -129,8 +178,18 @@
         max-width: 80%;
         box-sizing: border-box;
         margin-bottom: 20%;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .product-content {
+        max-width: 100%;
+    }
+
+    .product-title {
+        font-size: 17px;
+        line-height: 22px;
+        font-weight: 700;
     }
 
     .socials {
@@ -142,25 +201,13 @@
         padding: 80px 0 80px 0px;
     }
 
-    .popup-container {
-        max-width: 90%;
-        height: 90vh;
+    .popup-activ {
+        position: absolute;
+        max-width: 100%;
+        align-items: flex-start;
+        overflow: auto;
+        padding-top: 50px;
     }
-
-    .popup-select,
-    .popup-radio {
-        margin-bottom: 10px;
-    }
-
-    .comment {
-        height: 15vh;
-        margin-top: 15px;
-    }
-
-    .popup-button {
-        margin-top: 10px;
-    }
-
 
     @media (orientation:landscape) {
         .header {
@@ -208,6 +255,16 @@
         .product-content-text {
             outline-offset: 20px;
         }
+
+        .popup-activ {
+            position: absolute;
+            height: 100%;
+            align-items: flex-start;
+            overflow: auto;
+            padding-top: 50px;
+        }
+
+
 
     }
 }
