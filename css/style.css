@@ -383,8 +383,8 @@ body {
 }
 
 .other-content {
-    display: flex;
-    flex-direction: column;
+    padding: 0;
+    width: 262px;
 }
 
 .other-content-title {
@@ -397,6 +397,12 @@ body {
     margin-top: 0;
     margin-bottom: 20px;
 }
+
+.product-picture-box {
+    box-sizing: border-box;
+}
+
+
 
 .other-content-title::after {
     content: "";
@@ -766,7 +772,7 @@ li.tags-list-item {
 }
 
 .socials-base {
-    max-width: 210px;
+    max-width: 1170px;
     height: 80px;
     padding-left: 0;
 
@@ -778,12 +784,13 @@ li.tags-list-item {
 .socials {
     display: flex;
     flex-wrap: wrap;
-    height: 80px;
     padding-left: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
     margin-left: auto;
     margin-right: auto;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 
     position: relative;
@@ -797,8 +804,7 @@ li.tags-list-item {
 .socials-item {
     height: 20px;
     width: 20px;
-    margin-top: 0;
-    margin-right: 0;
+    margin-right: 27px;
 }
 
 .socials-link {
@@ -840,7 +846,7 @@ li.tags-list-item {
 
 .copyright {
     width: 18.7%;
-    padding: 80px 0 80px 40px;
+    padding: 80px 0;
 
     font-size: 12px;
     color: #999999;
@@ -871,6 +877,7 @@ li.tags-list-item {
     bottom: 0;
     left: 0;
     z-index: 9999;
+    
 }
 
 .popup-activ {
@@ -883,10 +890,11 @@ li.tags-list-item {
 .popup-container {
     box-sizing: border-box;
     width: 390px;
-    height: 589px;
     background-color: #ffffff;
     z-index: 10;
     position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .popup-content {
@@ -899,8 +907,9 @@ li.tags-list-item {
 .popup-content-title {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0;
     font-size: 20px;
-    line-height: 29px;
+    line-height: normal;
     color: #0f0d0e;
     font-weight: 700;
     font-family: "OpenSans-Bold";
@@ -924,7 +933,7 @@ li.tags-list-item {
 
 
 .popup-form {
-    width: 95%;
+    width: 100%;
 }
 
 .popup-select,
@@ -943,7 +952,7 @@ li.tags-list-item {
 .select {
     display: block;
     box-sizing: border-box;
-    width: 95%;
+    width: 100%;
     height: 48px;
     background-color: #f4f7f6;
     border: 1px solid transparent;
@@ -1012,7 +1021,8 @@ li.tags-list-item {
 }
 
 .comment {
-    width: 90%;
+    box-sizing: border-box;
+    width: 100%;
     height: 131px;
     resize: none;
     background-color: #f4f7f6;
@@ -1083,7 +1093,7 @@ li.tags-list-item {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 18px;
+    width: 24px;
     height: 4px;
 }
 
@@ -1182,7 +1192,7 @@ li.tags-list-item {
     }
 
     .page-content {
-        max-width: 80%;
+        max-width: 1200px;
         margin-right: auto;
         margin-left: auto;
         padding-left: 15px;
@@ -1229,16 +1239,11 @@ li.tags-list-item {
         margin-bottom: 25px;
     }
 
-    .other-content {
-        padding: 0;
-        max-width: 24%;
-    }
-
     .our-products {
         /*Блок Наши изделия*/
         flex-direction: column;
         margin-bottom: 92px;
-        max-width: 80%;
+        max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
         padding-left: 15px;
