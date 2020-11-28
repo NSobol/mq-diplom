@@ -159,6 +159,7 @@
     .product {
         box-sizing: border-box;
         margin-bottom: 10%;
+        max-width: 45%;
     }
 
     .product-img {
@@ -205,6 +206,10 @@
             margin-right: 0;
         }
 
+        .other-content {
+            flex: none;
+        }
+
         .our-products {
             /*Блок Наши изделия*/
             flex-direction: column;
@@ -233,5 +238,11 @@
         .product:last-child {
             margin-right: 0;
         }
+
+        .product-content-text {
+            padding-left: 0;
+        }
+
+
     }
 }
